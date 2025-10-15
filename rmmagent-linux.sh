@@ -65,7 +65,7 @@ rmm_agent_type=$7
 mesh_fqdn=$2
 mesh_id=$3
 
-go_version="1.21.6"
+go_version="1.25.3"
 go_url_amd64="https://go.dev/dl/go$go_version.linux-amd64.tar.gz"
 go_url_x86="https://go.dev/dl/go$go_version.linux-386.tar.gz"
 go_url_arm64="https://go.dev/dl/go$go_version.linux-arm64.tar.gz"
