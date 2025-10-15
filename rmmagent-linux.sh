@@ -93,6 +93,8 @@ function agent_compile() {
         tar -xf /tmp/rmmagent.tar.gz -C /tmp/
         rm /tmp/rmmagent.tar.gz
         cd /tmp/rmmagent-master
+        export GOPROXY=https://proxy.golang.org,direct
+
         case $system in
         amd64) env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -o /tmp/temp_rmmagent ;;
         x86) env CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -ldflags "-s -w" -o /tmp/temp_rmmagent ;;
